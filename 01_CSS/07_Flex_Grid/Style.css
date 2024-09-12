@@ -1,0 +1,24 @@
+*{
+    border-style: solid ;
+    
+    
+}
+.box{
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.container{
+    background-color: rgb(143, 97, 41);
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-auto-rows: minmax(100px, );
+    column-gap: 10px;
+    height: 400px;
+    
+    /* 
+    justify-content: space-around;
+    align-items:center;
+    */
+}

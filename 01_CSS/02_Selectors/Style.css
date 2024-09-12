@@ -1,0 +1,18 @@
+.superHeading{
+    font-size: larger !important;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(75, 73, 73) !important;
+}
+.Division{
+   display: flex; 
+   margin-bottom: 100px;  
+}
+.Division div{
+    background-color: blueviolet;
+}
+div{
+    background-color: blueviolet;
+}
+.title{
+    background-color: whitesmoke;
+}

@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    height: 50px;
+    width: 50vw;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: green;
+}
+.box4{
+    background-color: yellow;
+    position: Sticky;
+    text-align: center;
+    text-justify: center;
+    top: 10px;
+}
+.container{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 1000vh;
+    background-color: violet;
+}

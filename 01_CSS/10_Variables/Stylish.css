@@ -1,0 +1,17 @@
+*{
+    font-size: 18px;
+    --font-size-big:1.5rem;
+    --font-size-medium:1.3rem;
+    --font-size-normal:0.8rem;
+}
+
+.header{
+    font-size: var(--font-size-big);
+    font-weight: 800;
+}
+.mainer{
+    font-size: var(--font-size-normal);
+}
+.sider{
+    font-size: var(--font-size-normal);
+}

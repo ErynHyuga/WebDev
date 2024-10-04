@@ -1,0 +1,12 @@
+.bottom{
+    display: flex;
+}
+.mainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(143, 97, 41);
+    height: 100vh;
+    width: 100%;
+}

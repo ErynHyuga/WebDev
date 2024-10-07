@@ -1,0 +1,58 @@
+.blackBox{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.wrapper{
+    position: relative; ;
+}
+.flexing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.blue1{
+    background-color: blue;
+    justify-content: left;
+    align-items: end;
+    width: 200px;
+    height: 400px;
+}
+.blue2{
+    background-color: blue;
+    width: 200px;
+    height: 400px;
+    position: relative;
+}
+.red1{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-top: 380px;
+    margin-left: 180px;
+}
+.red2{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-top: 380px;
+    
+}
+.greenBlob{
+    background-color: yellowgreen;
+    width: 300px;
+    height: 300px;
+    margin-right: vw - 300px;
+    position: relative;
+    
+}
+.flexing{
+    height: 400px;
+    justify-content: space-between;
+}

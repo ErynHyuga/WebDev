@@ -1,0 +1,50 @@
+.wrapper{
+    position: relative;
+}
+.bigBlue{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.smallBlue{
+    background-color: lightblue;
+    width: 20px;
+    height: 20px;
+
+}
+.flexer{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border: 1px solid black;
+    
+}
+.greenBox{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: left;
+    align-items:end
+}
+.redBox{
+    width: 20px;
+    height: 40px;
+    
+    background-color: red;
+}
+.purpleBox{
+    position: absolute;
+    right: -20px;
+    bottom: -10px;
+    width: 60px;
+    height: 60px;
+    background-color: purple;
+    
+}

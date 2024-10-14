@@ -1,0 +1,59 @@
+.wrapper{
+    
+}
+.sammler{
+    
+    height: 400px;
+    width: 400px;
+}
+
+.upper{
+    display: flex;
+    height: 300px;
+    width: 400px;
+}
+.lower{
+    background-color: orangered;
+    width: 400px;
+    height: 100px;
+}
+.greenBox{
+    background-color: green;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blueBox{
+    background-color: blue;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    
+}
+.blackBox{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.grayBox{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+}
+.inBox{
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+}

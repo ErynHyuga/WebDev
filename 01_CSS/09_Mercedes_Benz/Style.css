@@ -1,0 +1,40 @@
+@media (min-width: 800px) {
+
+    .topMenu{
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000;   
+    }
+
+    .lefty{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .reighty{
+        display: flex;
+        padding-right: 200px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .legal{
+        font-size: 70px;
+        color: grey;
+        margin-right: 12px;
+        padding-right: 10px; ;
+    }
+
+    .menuText{
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: grey;
+        padding-right: 20px;
+    }
+}

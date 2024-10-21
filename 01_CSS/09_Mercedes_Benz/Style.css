@@ -2,19 +2,18 @@
 
     .topMenu{
         align-items: center;
-        top: 0;
-        left: 0;
+        justify-content: space-between;
         width: auto;
-        height: 80px;
+        height: 100px;
         display: flex;
-        justify-content: space-around;
+        
         background-color: #000;   
     }
 
     .lefty{
         display: flex;
         align-items: center;
-        
+        padding-left: 70px;
     }
 
     .reighty{
@@ -32,9 +31,29 @@
     }
 
     .menuText{
-        font-family: 'Roboto', sans-serif;
-        font-size: 15px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: bold;
+        font-size: 18px;
         color: grey;
-        padding-right: 20px;
+        padding-left: 60px;
+    }
+
+    .icon{
+        width: 30px;
+        margin-left: 65px;
+    }
+    .bigger{
+        height: 50px;
+        
+    }
+    .backy{
+        position: relative;
+    }
+    .support{
+        position: sticky;
+        bottom: 20px;
+        right: 20px;
+        margin-bottom: 700px;
+
     }
 }

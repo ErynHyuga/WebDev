@@ -7,7 +7,7 @@
         height: 100px;
         display: flex;
 
-        background-color: #000;
+        background-color: black;
     }
 
     .lefty {
@@ -37,6 +37,17 @@
         font-size: 18px;
         color: grey;
         padding-left: 60px;
+        text-decoration: none;
+        
+    }
+    .menuText:hover{
+        color: white;
+    }
+    .whiter:hover{
+        background-color: lightgray;
+    }
+    .blue:hover{
+        background-color: darkblue;
     }
 
     .icon {
@@ -51,8 +62,11 @@
 
     .backy {
         position: relative;
-    }
 
+    }
+    .Bild{
+        margin-left: 20px;
+    }
     .support {
         position: fixed;
         background-color: #1A1A1A;
@@ -65,6 +79,7 @@
     }
 
     .backy {
+        
         position: relative;
         background: linear-gradient(66deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     }
@@ -87,6 +102,7 @@
     }
     .textBox{
         margin-top: 350px;
+        margin-left: 100px;
               
     }
     .titlee{
@@ -106,7 +122,8 @@
         display: flex;
         justify-content: space-around;
         margin-top: 100px;
-        margin-left: 100px; 
+        margin-left: 250px;
+        
     }
     .mFeld{
         display: flex;
@@ -144,9 +161,7 @@
         margin-left: 40vw;
         display: flex;
         position: sticky;
-        top: 20px;
-        
-        
+        top: 20px;        
     }
     .smallPad{
         padding-right: 40px;
@@ -156,10 +171,57 @@
         border: gray solid 2px;
         align-items: center;
         justify-content: center;
-        
+        position: sticky;       
+        background-color: white; 
         
     }
+    footer{
+        height: 4000px;
+        margin-top: 300px;
+        background-color: black;
+        padding-top: 100px;
+        padding-left: 150px;
+    }
     .foundation{
-        height: 3000px;
+        
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        height: 400px;
+        background-color: black;   
+    }
+    .autoArr{
+        margin: 50px;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .autoBildre{
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 120px;
+        border: #fff solid 2px;
+        padding: 20px;
+    }
+    .carArray{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;   
+    }
+    .arrTitle{
+        font-size: 50px;
+        color: white;
+        margin-left: 50px;
+    }
+    .autoAnzeiger{
+
+        text-align: center;
+    }
+    .smallPad:hover{
+        background-color: lightgray;
+        
     }
 }

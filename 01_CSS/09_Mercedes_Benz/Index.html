@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +7,19 @@
     <link rel="stylesheet" href="Reset.css">
     <link rel="stylesheet" href="Style.css">
     <link rel="icon" type="image/x-icon" href="Images/logo.svg">
+    <link rel="src" href="">
+    
 </head>
-
 <body>
     <header class="topMenu">
         <div class="lefty">
-            <p class="menuText">Modelle</p>
-            <p class="menuText">Kaufen</p>
-            <p class="menuText">Services</p>
-            <p class="menuText">Markenwelt</p>
-        </div>
+            <a class="menuText" href ="https://www.htldornbirn.at" >Modelle</a>
+            <a class="menuText" href ="https://youtu.be/C2Gyk-9pbZ8?si=1AQiH93Hl-F5SVu7&t=327" >Kaufen</a>
+            <a class="menuText" href ="https://de.wiktionary.org/wiki/Service">Services</a>
+            <a class="menuText" href ="https://de.wikipedia.org/wiki/Automobil">Markenwelt</a>
+            </div>
         <div class="logo">
-            <img src="Images/logo.svg" alt="Mercedes Star" class="bigger">
+            <a href="https://www.mercedes-benz.at"></a><img src="Images/logo.svg" alt="Mercedes Star" class="bigger"></a>
         </div>
         <div class="reighty">
             <img src="Images/legal.svg" alt="Magnifier" class="icon">
@@ -28,23 +28,20 @@
             <img src="Images/star.svg" alt="Star" class="icon">
         </div>
     </header>
-    <main>
+    <main>        
         <div class="backy">
-            <img src="Images/background.avif" alt="Autos" height="100%" width="100%">
+            <img class="Bild" src="Images/background.avif" alt="Autos" height="100%" width="100%">
             <div class="gradianDiv">
                 <div class="gradientCont">
                     <div class="textBox">
                         <h1 class="titlee">Fahr deinen Traum.</h1>
                         <p class="textie">Jetzt im Leasing mit Fixzins ab 1,99 %.[a]</p>
                         <div class="unterDiv">
-                            <div class="mFeld whiter"> Mehr Erfahren</div>
-                            <div class="mFeld blue">Angebot anfordern</div>
+                            <button onclick="more()" class="mFeld whiter"> Mehr Erfahren</button>
+                            <button onclick="demand()" class="mFeld blue" >Angebot anfordern</button>
                         </div>
-
                     </div>
                 </div>
-                <div class="gradientCont"></div>
-
             </div>
             <div class="support">
                 <img class="image-blurred-edge" src="Images/FAQ.png" alt="faq" height="80px" width="80px">
@@ -68,7 +65,7 @@
     <div class="surrounder">
         <div class="choose">
             <div class="McBenz smallPad">
-                <img src="Images/McBenz.svg" alt="McBenz">
+                <img src="Images/McBenz.svg" alt="McBenz" >
             </div>
             <div class="AMG smallPad">
                 <img src="Images/AMG.svg" alt="AMG">
@@ -80,9 +77,36 @@
     </div>
     
     <footer>
-        <div class="foundation">        </div>
+        <div class="foundation">
+            <div class="autoArr">
+                <div class="arrTitle">
+                    <p>Alle Fahrzeuge</p>
+                </div>
+                <div class="carArray">
+                    <div class="autoAnzeiger">
+                        <img src="Images/Van.svg" alt="Van" class="autoBildre">
+                        <p>Transporter</p>
+                    </div>
+                    <div class="autoAnzeiger">
+                        <img src="Images/Reisemobile.svg" alt="Reisemobile" class="autoBildre">
+                        <p>Reisemobil</p>
+                    </div>
+                    <div class="autoAnzeiger">
+                        <img src="Images/Unimog.svg" alt="Unimog" class="autoBildre">
+                        <p>Unimog</p>
+                    </div>
+                    <div class="autoAnzeiger">
+                        <img src="Images/Bus.svg" alt="Autobus" class="autoBildre">
+                        <p>Bus</p>
+                    </div>
+                    <div class="autoAnzeiger">
+                        <img src="Images/Smart.svg" alt="Smart" class="autoBildre">
+                        <p>Smart</p>
+                </div>
+                
+            </div>
+        </div>
     </footer>
 
 </body>
-
 </html>

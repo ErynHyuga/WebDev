@@ -1,6 +1,7 @@
 import { createInterface } from "readline";
 
-const password = "1234";
+
+const password = 1234;
 const balance = 10000;
 const readline = createInterface({
     input: process.stdin,
@@ -8,18 +9,37 @@ const readline = createInterface({
 });
 
 
-function login() {
-    readline.question("Enter your password: ", (input) => {
-        if (input === password) {
-            console.log("Access granted");
-            return true;
-        } else {
-            console.log("ACCESS DENIED");
-            return false;
-        }
-    });
-}
+function main() {
 
+    let failedAttempts = 0;
+    
+    while (failedAttempts < 3) {
+        passwordEinlokken();
+        if (passwordEinlokken(false)) {
+            failedAttempts++;
+            console.log(`Access failed.${3 - failedAttempts} attempts left`);
+        }
+        else if (failedAttempts === 0 <= 3 && passwordEinlokken(true)) {
+            console.log("Access granted");
+        }
+    }
+    if (failedAttempts === 3) {
+        console.log("ACCESS DENIED. EXITING...");
+        window.close(); 
+    }
+}
+function passwordEinlokken() {
+    readline.question("Enter your password: ", (input) => {
+        switch (input) {
+            case password:
+                return true;
+            default:
+                return false;
+        }    
+    });
+    
+}
+/*
 function withdraw(amount) {
     if (amount > balance) {
         console.log("Insufficient balance");
@@ -43,23 +63,5 @@ function exit() {
     console.log("EXITING...");
     window.close();
 }
-
-function main() {
-    
-    let failedAttempts = 0;
-    
-    login();
-    if (login(false)) {
-        failedAttempts++;
-    }
-    else if (failedAttempts <= 3 && login(true)) {
-        
-    }
-    else {
-        console.log("ACCESS DENIED. EXITING...");
-        window.close();
-    }
-    
-    
-
-}
+*/
+main();

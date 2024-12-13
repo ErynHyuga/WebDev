@@ -2,45 +2,51 @@ import { createInterface } from "readline";
 
 
 const password = 1234;
-const balance = 10000;
+let balance = 10000;
 const readline = createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
+    
 });
 
 
-function main() {
-
-    let failedAttempts = 0;
+async function main() {
     
+    let failedAttempts = 0;
+
     while (failedAttempts < 3) {
-        passwordEinlokken();
-        if (passwordEinlokken(false)) {
-            failedAttempts++;
-            console.log(`Access failed.${3 - failedAttempts} attempts left`);
-        }
-        else if (failedAttempts === 0 <= 3 && passwordEinlokken(true)) {
+        const isPasswordCorrect = await passwordEinlokken();
+        if (isPasswordCorrect) {
             console.log("Access granted");
-        }
+            menu();
+        } else {
+            failedAttempts++;
+            console.log(`Access failed. ${3 - failedAttempts} attempts left`);
+        }   
     }
     if (failedAttempts === 3) {
         console.log("ACCESS DENIED. EXITING...");
-        window.close(); 
+        readline.close();
     }
 }
 function passwordEinlokken() {
-    readline.question("Enter your password: ", (input) => {
-        switch (input) {
-            case password:
-                return true;
-            default:
-                return false;
-        }    
+    return new Promise((resolve) => {
+        readline.question("Enter your password: ", (inputPw) => {
+            if (parseInt(inputPw) === password) {
+                resolve(true);
+            } else {
+                resolve(false);
+            }
+        });
     });
-    
 }
-/*
+
 function withdraw(amount) {
+    amount = parseInt(amount);
+    if (isNaN(amount) || amount <= 0) {
+        console.log("Please enter a valid positive number");
+        return;
+    }
     if (amount > balance) {
         console.log("Insufficient balance");
     } else {
@@ -49,19 +55,57 @@ function withdraw(amount) {
     }
 }
 function deposit(amount) {
-    if (amount <= 0) {
-        console.log("Invalid amount");
-    } else {
-        balance += amount;
-        console.log(`Deposited ${amount}. New balance: ${balance}`);
+    amount = parseInt(amount);
+    if (isNaN(amount) || amount <= 0) {
+        console.log("Please enter a valid positive number");
+        return;
     }
+    balance += amount;
+    console.log(`Deposited ${amount}. New balance: ${balance}`);
 }
 function checkBalance() {
     console.log(`Current balance: ${balance}`);
 }
+function menu() {
+    readline.question("Choose your action: \n1. Withdraw \n2. Deposit \n3. Check Balance \n4. Exit \nInput: ", (inputMenu) => {
+        switch (inputMenu) {
+        case "1":
+            readline.question("Enter the amount to withdraw: ", (inputAmount) => {
+                withdraw(inputAmount);
+                readline.question("Press Enter to continue", () => {
+                    menu();
+                });
+            });
+            break;
+            
+        case "2":
+            readline.question("Enter the amount to deposit: ", (inputAmount) => {
+                deposit(inputAmount);
+                readline.question("Press Enter to continue", () => {
+                    menu();
+                });
+            });
+            break;
+        case "3":
+            checkBalance();
+            readline.question("Press Enter to continue", () => {
+                menu();
+            });
+            break;
+        case "4":
+            exit();
+            break;
+        default:
+            console.log("None-possible action");
+            menu();
+            break;
+        }
+
+    });
+}
 function exit() {
     console.log("EXITING...");
-    window.close();
+    process.exit(0);
 }
-*/
+
 main();

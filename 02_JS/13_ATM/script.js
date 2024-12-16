@@ -1,6 +1,5 @@
 import { createInterface } from "readline";
 
-
 const password = 1234;
 let balance = 10000;
 const readline = createInterface({
@@ -11,13 +10,13 @@ const readline = createInterface({
 
 
 async function main() {
-    
     let failedAttempts = 0;
 
     while (failedAttempts < 3) {
         const isPasswordCorrect = await passwordEinlokken();
         if (isPasswordCorrect) {
-            console.log("Access granted");
+            console.log("Access granted \n");
+            console.log(`Welcome, ${name}`);
             menu();
         } else {
             failedAttempts++;

@@ -16,7 +16,7 @@ async function main() {
         const isPasswordCorrect = await passwordEinlokken();
         if (isPasswordCorrect) {
             console.log("Access granted \n");
-            console.log(`Welcome, ${name}`);
+            
             menu();
         } else {
             failedAttempts++;

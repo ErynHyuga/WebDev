@@ -43,7 +43,7 @@ function calCER() {
 }
 
 
-async function buttonClick() {
+function buttonClick() {
 
     calCER();
     console.log("button clicked");

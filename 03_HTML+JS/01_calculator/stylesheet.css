@@ -1,9 +1,0 @@
-.gridder{
-    display: grid;
-    grid-template-columns: 30px 30px 3000px;
-    background-color: aquamarine;
-}
-
-.boxInp{
-    display: flex;;
-}

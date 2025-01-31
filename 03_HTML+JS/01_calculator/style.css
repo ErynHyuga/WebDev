@@ -19,6 +19,7 @@
     height: 50px;
     border: 1px solid black;
     text-align: center;
-    justify-: center;
-    line-height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
 }

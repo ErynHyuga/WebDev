@@ -1,21 +1,21 @@
 euqation = "";
 
 
-function add() {
+const add = () => {
     euqation = "add";
     console.log("add");
 
 }
-function sub() {
+const sub = () => {
     euqation = "sub";
     console.log("sub");
 
 }
-function mul() {
+const mul = () => {
     euqation = "mul";
     console.log("mul");
 }
-function div() {
+const div = () => {
     euqation = "div";
     console.log("div");
 

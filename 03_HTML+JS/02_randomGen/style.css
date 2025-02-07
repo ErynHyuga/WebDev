@@ -1,0 +1,28 @@
+.titlinger{
+    display: flex;
+    padding: 20px;
+}
+.fielderWrap{
+    display: flex;
+    padding: 20px;
+}
+.inField{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sign{
+    border: 1px solid gray;
+    color: rgb(100, 100, 100);
+}
+.main{
+    
+    align-items: center;
+    justify-items: center;
+}
+.result{
+    justify-items: left;
+}
+#result{
+    
+}

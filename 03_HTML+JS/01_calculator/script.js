@@ -1,26 +1,5 @@
-euqation = "";
 
-
-const add = () => {
-    euqation = "add";
-    console.log("add");
-
-}
-const sub = () => {
-    euqation = "sub";
-    console.log("sub");
-
-}
-const mul = () => {
-    euqation = "mul";
-    console.log("mul");
-}
-const div = () => {
-    euqation = "div";
-    console.log("div");
-
-}
-function calCER() {
+function calCER(euqation) {
     let str1 = document.getElementById("num1").value;
     let str2 = document.getElementById("num2").value;
     let num1 = Number(str1);

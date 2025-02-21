@@ -14,7 +14,7 @@
 .sign{
     border: 1px solid gray;
     color: rgb(100, 100, 100);
-}
+    }
 .main{
     
     align-items: center;
@@ -24,5 +24,8 @@
     justify-items: left;
 }
 #result{
-    
+
+}
+*{
+    padding: 10px;;
 }

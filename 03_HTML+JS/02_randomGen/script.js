@@ -28,7 +28,7 @@ const testing = () => {
     for (let i = 0; i < 100; i++) {
         ranNumGen();
         if (ranNumGen() <= lower || ranNumGen() >= upper) {
-            console.log("Error");
+            c onsole.log("Error");
         }
     }
 }

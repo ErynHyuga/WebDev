@@ -9,12 +9,14 @@ const loadDataFromAPI = () => {
             let html = [];
 
             json.forEach((footB) => {
+                console.log(footB);
+                
                 html.push(
                     "<div><div><div>" + 
                     footB.teamName + 
-                    "</div>" + 
+                    "</div>xx" + 
                     footB.points + 
-                    +" <p>Points<p> </div> " +
+                    " <div>Points</div> </div> " +
                     "<br><img width='100px' src ='" + 
                     footB.teamIconUrl + 
                     "?id=" + 

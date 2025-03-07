@@ -41,13 +41,14 @@ class Person {
         this.name = name;
     }
     printNameArrow(){
-        printNameFunction(){
-            setTimeout(function(){
-                console.log("Function: " + this.name);
-            }, 10);
-        }
+         
         setTimeout(() => {
             console.log("Arrow: " + this.name);
+        }, 10);
+    }
+    printNameFunction(){
+        setTimeout(function(){
+            console.log("Function: " + this.name);
         }, 10);
     }
 }

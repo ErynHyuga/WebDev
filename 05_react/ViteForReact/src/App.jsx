@@ -2,11 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Lists from './components/Lists'
 import Card from './components/Card'
+import InfoCard from './components/InfoCard'
+import Button from './components/Button'
 
 
 function App() {
   const [count, setCount] = useState(0)
+  const johndoe = 'src/assets/johndoe.jpg'
 
   return (
     <>
@@ -18,12 +22,10 @@ function App() {
         <Card name={'net dr Mister'} title={'Melker'}/>
         <Card name={'Baeneas'} title={'Aeneas'}/>
         <Card name={'Melkmir'} title={'Fire'}/>
-
       </div>
-
-      test
-
-
+        <Lists items={['Beer', 'Tea', 'Radler', 'Leadlined Water']}></Lists>
+        <InfoCard image={johndoe} name={'Ea-Nasir'} title={'Copper Merchant'} information={'𒅋 𒌓 𒍪 𒌝 𒊏 𒊏 𒋗 𒌒 𒋾 𒄿 𒆷 𒁴'} imgDescription="picture"></InfoCard>
+        
     </>
   )
 }

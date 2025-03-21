@@ -6,11 +6,15 @@ import Lists from './components/Lists'
 import Card from './components/Card'
 import InfoCard from './components/InfoCard'
 import Button from './components/Button'
+import PeopleCard from './components/PeopleCard'
+import PeopleContainer from './components/peopleContainer'
+
 
 
 function App() {
   const [count, setCount] = useState(0)
   const johndoe = 'src/assets/johndoe.jpg'
+  const john = 'src/assets/john.png'
 
   return (
     <>
@@ -25,6 +29,10 @@ function App() {
       </div>
         <Lists items={['Beer', 'Tea', 'Radler', 'Leadlined Water']}></Lists>
         <InfoCard image={johndoe} name={'Ea-Nasir'} title={'Copper Merchant'} information={'𒅋 𒌓 𒍪 𒌝 𒊏 𒊏 𒋗 𒌒 𒋾 𒄿 𒆷 𒁴'} imgDescription="picture"></InfoCard>
+        <Button title={'Ey'} start={100} ></Button>
+        <PeopleCard titles={['Prof', 'Melker', 'Lelek']} names={['Prof', 'Mir', 'Smelek']} ></PeopleCard>
+        
+        
         
     </>
   )

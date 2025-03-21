@@ -30,7 +30,7 @@ function App() {
         <Lists items={['Beer', 'Tea', 'Radler', 'Leadlined Water']}></Lists>
         <InfoCard image={johndoe} name={'Ea-Nasir'} title={'Copper Merchant'} information={'𒅋 𒌓 𒍪 𒌝 𒊏 𒊏 𒋗 𒌒 𒋾 𒄿 𒆷 𒁴'} imgDescription="picture"></InfoCard>
         <Button title={'Ey'} start={100} ></Button>
-        <PeopleCard titles={['Prof', 'Melker', 'Lelek']} names={['Prof', 'Mir', 'Smelek']} ></PeopleCard>
+        <PeopleCard titles={['Prof', 'Melker', 'Lelek']} names={['Schmof', 'Mir', 'Smelek']} ></PeopleCard>
         
         
         

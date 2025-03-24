@@ -7,7 +7,7 @@ import Card from './components/Card'
 import InfoCard from './components/InfoCard'
 import Button from './components/Button'
 import PeopleCard from './components/PeopleCard'
-import PeopleContainer from './components/peopleContainer'
+import PeopleContainer from './components/PeopleContainer'
 
 
 
@@ -38,10 +38,8 @@ function App() {
         <Lists items={['Beer', 'Tea', 'Radler', 'Leadlined Water']}></Lists>
         <InfoCard image={ea} name={'Ea-Nasir'} title={'Copper Merchant'} information={'𒅋 𒌓 𒍪 𒌝 𒊏 𒊏 𒋗 𒌒 𒋾 𒄿 𒆷 𒁴'} imgDescription="picture"></InfoCard>
         <Button title={'Ey'} start={100} ></Button>
-        <PeopleCard titles={['Schmishtar', 'dr Melker', 'Great King of Kings', 'Saggumar', 'Kollege', 'Freund der Sonne']} names={['Ishtar', 'net dr Mister', 'Gilgamesh', 'Ea-Nasir', 'Melkmir', 'Shamash']} image={[ishtar, enkidu, gilgamesh, ea, hittite, smasha]} imgDescription={['evil goddess', 'weird taurus creature']} ></PeopleCard>
         
-        
-        
+       <PeopleContainer/> 
     </>
   )
 }

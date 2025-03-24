@@ -17,7 +17,7 @@ export default function PeopleContainer() {
   return (
     <>
 
-<div className='flexbox-10' style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+<div className='ml-20% flexbox-10' style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
       {people.map((person, index) => (
         
           <PeopleCard key={index} title={person.title} name={person.name} image={person.image}  />

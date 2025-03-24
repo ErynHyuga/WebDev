@@ -11,6 +11,9 @@ import PeopleContainer from './components/PeopleContainer'
 
 
 
+
+
+
 function App() {
   const [count, setCount] = useState(0)
   const ea = 'src/assets/ea.jpg'
@@ -18,11 +21,13 @@ function App() {
   const melker = 'src/assets/melker.jpg'
   const aeneas = 'src/assets/aeneas.jpg'
   const fire = 'src/assets/fire.jpg'
-  const hittite= 'src/assets/hittite.jpg'
+  const hittite = 'src/assets/hittite.jpg'
   const gilgamesh = 'src/assets/gilgamesh.jpg'
   const enkidu = 'src/assets/enkidu.jpg'
   const ishtar = 'src/assets/ishtar.jpg'
   const smasha = 'src/assets/shamash.jpg'
+
+
 
   return (
     <>
@@ -31,15 +36,15 @@ function App() {
       </h1>
       <p className='bg-purple-700 text-center'>brutal</p>
       <div className='flex justify-center'>
-        <Card name={'net dr Mister'} title={'Melker'}/>
-        <Card name={'Baeneas'} title={'Aeneas'}/>
-        <Card name={'Melkmir'} title={'Fire'}/>
+        <Card name={'net dr Mister'} title={'Melker'} />
+        <Card name={'Baeneas'} title={'Aeneas'} />
+        <Card name={'Melkmir'} title={'Fire'} />
       </div>
-        <Lists items={['Beer', 'Tea', 'Radler', 'Leadlined Water']}></Lists>
-        <InfoCard image={ea} name={'Ea-Nasir'} title={'Copper Merchant'} information={'𒅋 𒌓 𒍪 𒌝 𒊏 𒊏 𒋗 𒌒 𒋾 𒄿 𒆷 𒁴'} imgDescription="picture"></InfoCard>
-        <Button title={'Ey'} start={100} ></Button>
-        
-       <PeopleContainer/> 
+      <Lists items={['Beer', 'Tea', 'Radler', 'Leadlined Water']}></Lists>
+      <InfoCard image={ea} name={'Ea-Nasir'} title={'Copper Merchant'} information={'𒅋 𒌓 𒍪 𒌝 𒊏 𒊏 𒋗 𒌒 𒋾 𒄿 𒆷 𒁴'} imgDescription="picture"></InfoCard>
+      <Button title={'Ey'} start={100} ></Button>
+
+      <PeopleContainer />
     </>
   )
 }

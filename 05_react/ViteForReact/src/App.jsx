@@ -28,7 +28,7 @@ function App() {
     <>
       <Excercise02 />
       <div className='border-black border-1 mt-20 mb-20'></div>
-      
+      <div>andi test</div>
       <Excercise03/>
 
     </>

@@ -4,6 +4,7 @@ import {
 } from "react-router";
 import PageAbout from "./components/excercises/PageAbout";
 import React from "react";
+import HomePage from "./components/excercises/HomePage";
 import ReactDOM from "react-dom/client";
 
 import Excercise03 from "./components/excercises/03Excercise";
@@ -11,7 +12,7 @@ import Excercise03 from "./components/excercises/03Excercise";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello World</div>,
+    element: <HomePage/>,
   },
   {
     path: "/about",

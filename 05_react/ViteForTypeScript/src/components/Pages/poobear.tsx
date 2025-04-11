@@ -1,9 +1,13 @@
 import React from 'react'
+import { HomeButton } from "../HomeButton";
 
 type Props = {}
 
 export const WinnieThePooh = (props: Props) => {
   return (
-    <div>WinnieThePooh</div>
+    <>
+      <HomeButton />
+      <div>WinnieThePooh</div>
+    </>
   )
 }

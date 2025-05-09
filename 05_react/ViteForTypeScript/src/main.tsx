@@ -9,6 +9,8 @@ import { About } from "./components/Pages/About";
 import { WinnieThePooh } from "./components/Pages/poobear";
 import { People } from "./components/Pages/People";
 import { Menu } from "./components/Pages/Menu";
+import { GiveData } from "./components/Pages/GiveData";
+import { DataTo } from "./components/Pages/DataTo";
 import './App.css'
 
 
@@ -32,7 +34,15 @@ const router = createBrowserRouter([
   {
     path: "/antiSpyWare",
     element: <WinnieThePooh/>,
-  }
+  },
+  {
+    path: "/dataleecher",
+    element: <GiveData/>,
+  },
+  {
+    path: "/dataleecher/leech",
+    element: <DataTo/>,
+  },
 
 ]);
 

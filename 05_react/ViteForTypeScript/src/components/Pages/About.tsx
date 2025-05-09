@@ -1,9 +1,14 @@
 import React from 'react'
+import { HomeButton } from "../HomeButton";
 
 type Props = {}
 
 export const About = (props: Props) => {
   return (
-    <div>About</div>
+    <>
+      <HomeButton />
+      <div>About</div>
+    </>
+
   )
 }

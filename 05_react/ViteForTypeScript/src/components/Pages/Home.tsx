@@ -8,15 +8,17 @@ export const Home = (props: Props) => {
     <>
       <div className="ml-8">
         <div className="text-5xl m-8 ml-0">
-        <HomeButton/>
+          <h1>Home</h1>
         </div>
-        
+
         <p>yeah buddy</p>
-        
-        <div><Link to="/OurMembers">People</Link></div>
-        <div><Link to="/Menu">Menu</Link></div>
-        <div><Link to="/about">About</Link></div>
-        
+        <div className="hover:text-blue-900">
+
+          <div className="hover:text-blue-800 text-blue-300 underline"><Link to="/OurMembers">People</Link></div>
+          <div className="hover:text-blue-800 text-blue-300 underline"><Link to="/Menu">Menu</Link></div>
+          <div className="hover:text-blue-800 text-blue-300 underline"><Link to="/about">About</Link></div>
+          <div className="hover:text-blue-800 text-blue-300 underline" ><Link to="/dataleecher">Data Give-away</Link></div>
+        </div>
       </div>
     </>
   )

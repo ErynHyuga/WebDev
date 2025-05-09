@@ -10,7 +10,9 @@ type Props = {}
 export const HomeButton = (props: Props) => {
     return (
         <>
-            <Link to="/">Home</Link>
+            <div className="text-2xs ">
+                <Link to="/">🏠</Link>
+            </div>
             
         </>
     )

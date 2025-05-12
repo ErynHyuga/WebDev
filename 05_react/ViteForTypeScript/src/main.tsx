@@ -12,6 +12,7 @@ import { Menu } from "./components/Pages/Menu";
 import { GiveData } from "./components/Pages/GiveData";
 import { DataTo } from "./components/Pages/DataTo";
 import './App.css'
+import { Football } from "./components/Pages/Football";
 
 
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
     path: "/dataleecher/leech",
     element: <DataTo/>,
   },
+  {
+    path: "/fuitball",
+    element: <Football/>,
+  }
 
 ]);
 
